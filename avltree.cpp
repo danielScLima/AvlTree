@@ -24,6 +24,7 @@ void AvlTree::dealockNodes()
     {
         root->dealockSubTree();
         delete root;
+        root = nullptr;
     }
 }
 
@@ -401,6 +402,10 @@ void AvlTree::checkTheNeedAndMakeRotation(AVLNode *initial)
                         AVLNode* backup = tmp->left;
                         AVLNode* backup2 = backup->right;
                         backup->right = tmp;
+
+                        //change
+                        tmp->father = backup;
+
                         if (backup2 != nullptr)
                             backup2->father = tmp;
                         tmp->left = backup2;
@@ -513,6 +518,10 @@ void AvlTree::checkTheNeedAndMakeRotation(AVLNode *initial)
                         AVLNode* backup = tmp->right;
                         AVLNode* backup2 = backup->left;
                         backup->left = tmp;
+
+                        //change
+                        tmp->father = backup;
+
                         if (backup2 != nullptr)
                             backup2->father = tmp;
                         tmp->right = backup2;

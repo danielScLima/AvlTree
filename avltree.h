@@ -136,6 +136,11 @@ public:
      */
     AVLNode *getFatherOfPredecessor(AVLNode *n);
 
+    /*!
+     * \brief dealockNodes
+     */
+    void dealockNodes();
+
 private:
     struct AVLNode* root = nullptr;
 
@@ -198,10 +203,7 @@ private:
      * \param initial
      */
     void checkTheNeedAndMakeRotation(AVLNode *initial);
-    /*!
-     * \brief dealockNodes
-     */
-    void dealockNodes();
+
 };
 
 #endif // AVLTREE_H
