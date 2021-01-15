@@ -1,5 +1,6 @@
 AVL Tree
 ====================
+Build with Travis: [![Build Status](https://www.travis-ci.com/danielScLima/AvlTree.svg?branch=master)](https://www.travis-ci.com/danielScLima/AvlTree)
 
 This repository has a project with the implementation of a AVL Tree.
 
