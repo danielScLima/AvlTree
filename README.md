@@ -1,5 +1,6 @@
 AVL Tree
 ====================
+Build with AppVeyor: [![Build status](https://ci.appveyor.com/api/projects/status/lb7rbw7ut57oa476?svg=true)](https://ci.appveyor.com/project/DanielSLima/avltree)
 Build with Travis: [![Build Status](https://www.travis-ci.com/danielScLima/AvlTree.svg?branch=master)](https://www.travis-ci.com/danielScLima/AvlTree)
 
 This repository has a project with the implementation of a AVL Tree.
